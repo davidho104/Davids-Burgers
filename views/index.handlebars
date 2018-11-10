@@ -1,30 +1,47 @@
 <div class="container">
-    <h1>Burgers</h1>
-    <div class="container">
-        <img src="/assets/img/image.PNG" alt="burger">
-        <h2>Eat Me!</h2>
-        <ul class="list-group">
-            {{#each burgers}} {{#unless devoured}} {{name}}
-            <button style="width:70px" data-burgerid="{{this.id}}" data-burgername="{{this.name}}" data-newdevoured="{{devoured}}">Devour</button>
-            <br> {{/unless}} {{/each}}
-        </ul>
-    </div>
-    <div class="container">
-        <h2>Devoured Burgers</h2>
-        <ul class="list-group">
-            {{#each burgers}} {{#if devoured}} {{name}}
-            <button style="width:70px" data-burgerid="{{this.id}}" data-burgername="{{this.name}}" data-newdevoured="{{this.devoured}}">Delete</button>
-            <br> {{/if}} {{/each}}
-        </ul>
-    </div>
-    <div class="container">
-        <h2>Add A Burger</h2>
-        <form>
-            <div class="form-group">
-                <label for="burger">Burger Name: </label>
-                <input type="text" name="burger">
+    <h1 align="center">Burger Joint!</h1>
+    <img style="display: block; margin-left: auto; margin-right: auto" src="/assets/img/image.PNG" alt="burger">
+    <br>
+    <div class="row content">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-5">
+            <h2>Eat Me!</h2>
+            <ul class="list-group">
+                <b>
+                    {{#each burgers}} {{#unless devoured}} {{name}}
+                    <button style="width:70px" data-burgerid="{{this.id}}" data-burgername="{{this.name}}" data-newdevoured="{{devoured}}">Devour</button>
+                    <br> {{/unless}} {{/each}}</b>
+            </ul>
+        </div>
+        <div class="col-sm-5">
+            <h2>Devoured Burgers</h2>
+            <ul class="list-group">
+                <b>
+                    {{#each burgers}} {{#if devoured}} {{name}}
+                    <button style="width:70px" data-burgerid="{{this.id}}" data-burgername="{{this.name}}" data-newdevoured="{{this.devoured}}">Delete</button>
+                    <br> {{/if}} {{/each}}</b>
+            </ul>
+        </div>
+        <div class="container">
+            <br>
+            <div class="row content">
+                <div class="col-sm-4">
+                </div>
+                <h2>Add A Burger - </h2>
+                <div class="col-sm-4">
+                    <form>
+                        <div class="form-group">
+                            <b>
+                                <label for="burger">Burger Name: </label>
+                                <input type="text" name="burger">
+                            </b>
+                        </div>
+                        <button type="submit">Add Burger</button>
+                    </form>
+                </div>
             </div>
-            <button type="submit">Add Burger</button>
-        </form>
+        </div>
+
     </div>
 </div>
