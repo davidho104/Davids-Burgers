@@ -1,0 +1,14 @@
+{
+  "name": "Davids-Burgers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/davidho104/Davids-Burgers.git",
+  "author": "davidho104 <davidho104@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7"
+  }
+}
