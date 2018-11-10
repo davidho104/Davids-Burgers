@@ -16,4 +16,4 @@ ________________________________________________________________________________
 * [Check out this video of the app for a run-through of how it works](https://youtu.be/msvdn95x9OM).
 
 
-![Image of app](https://raw.githubusercontent.com/davidho104/Davids-Burgers/master/demo.PNG)
+![Image of app](https://raw.githubusercontent.com/davidho104/Davids-Burgers/master/public/assets/img/demo.PNG)
